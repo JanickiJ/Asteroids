@@ -32,9 +32,11 @@ private:
 
 public:
     explicit Game(RenderWindow *window);
+
     void add_bullet();
     void add_rock();
     void add_space_ship();
+
     SpaceShip *get_space_ship() { return space_ship; }
     void draw();
     void draw_text();

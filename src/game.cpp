@@ -2,7 +2,7 @@
 #include "game.h"
 #include <algorithm>
 
-#define MAX_ROCKS_NUM 25
+#define MAX_ROCKS_NUM 23
 
 Game::Game(RenderWindow *win) {
     window = win;
@@ -32,6 +32,7 @@ Game::Game(RenderWindow *win) {
     background_texture.setSmooth(true);
     background = Sprite(background_texture);
     background.setScale(0.57,1);
+
     add_space_ship();
 }
 
